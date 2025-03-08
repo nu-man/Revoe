@@ -27,7 +27,7 @@ const Signup = () => {
       console.log("Response from server:", data);
       alert("User registered successfully. Redirecting to login");
       setTimeout(() => {
-        navigate("/login", { replace: true });
+        navigate("/", { replace: true });
       }, 3000);
     } catch (error) {
       console.error("Registration Error:", error);
