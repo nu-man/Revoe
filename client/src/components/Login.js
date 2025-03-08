@@ -1,4 +1,4 @@
-import React, { useState,useEffect  } from "react";
+import React, { useState  } from "react";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
 import { useNavigate,Link } from "react-router-dom";

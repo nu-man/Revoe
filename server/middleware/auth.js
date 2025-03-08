@@ -9,11 +9,11 @@ export const authMiddleware = (req, res, next) => {
     
     req.user = { _id: decoded.user_id }; 
     const userId = req.user._id;
-
-    
     next();
   } catch (err) {
     console.error("Token validation failed:", err);
     res.status(401).json({ message: "Token is not valid" });
   }
 };
+
+export default authMiddleware;
